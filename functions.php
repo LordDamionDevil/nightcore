@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-    $to = "brandon4657@hotmail.com";
+    $to = "YourEmail";
     $subject = "Database Error";
 
     $message = $conn->connect_error;
@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     $headers .= "Content-type:text/html;charset=UTF-8" . "\n";
 
     // More headers
-    $headers .= 'From: team@nightcore.co.uk' . "\n";
+    $headers .= 'From: SiteEmail' . "\n";
 
     mail($to,$subject,$message,$headers);
 }
@@ -54,7 +54,7 @@ function getInfo($conn, $songid) {
 }
 
 function getDescription($songid) {
-    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=AIzaSyDhFHdCAkvU9iSmZbH0N9C_1D64BsUawzI";
+    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=yourkey";
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_RETURNTRANSFER => 1,
@@ -73,7 +73,7 @@ function getDescription($songid) {
 }
 
 function getDescriptionOne($songid) {
-    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=AIzaSyDhFHdCAkvU9iSmZbH0N9C_1D64BsUawzI";
+    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=yourkey";
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_RETURNTRANSFER => 1,
@@ -92,7 +92,7 @@ function getDescriptionOne($songid) {
 }
 
 function getDescriptionTwo($songid) {
-    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=AIzaSyDhFHdCAkvU9iSmZbH0N9C_1D64BsUawzI";
+    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=yourkey";
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_RETURNTRANSFER => 1,
