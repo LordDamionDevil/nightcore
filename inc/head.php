@@ -7,11 +7,11 @@ $pagename = basename($_SERVER['SCRIPT_FILENAME']);
     </title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-    <script src="http://beta.nightcore.co.uk/js/bootstrap-material-design.min.js"></script>
-    <script src="http://beta.nightcore.co.uk/js/postboot.min.js"></script>
+    <script src="/js/bootstrap-material-design.min.js"></script>
+    <script src="/js/postboot.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons|Merienda">
-    <link rel="stylesheet" href="http://beta.nightcore.co.uk/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="http://beta.nightcore.co.uk/css/postboot.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="/css/postboot.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
         body {
