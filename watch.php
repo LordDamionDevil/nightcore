@@ -53,7 +53,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
     </div>
 <div class="row justify-content-center" style="margin-top: 25px;">
 <div class="col-md-3">
-    <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomone['nightcore']; ?>" style="text-decoration: none;">
+    <a href="/watch.php?v=<?php echo $randomone['nightcore']; ?>" style="text-decoration: none;">
         <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
             <img class="card-img-top" src="<?php echo $rone['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
             <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -63,7 +63,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
     </a>
 </div>
     <div class="col-md-3">
-    <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomtwo['nightcore']; ?>" style="text-decoration: none;">
+    <a href="/watch.php?v=<?php echo $randomtwo['nightcore']; ?>" style="text-decoration: none;">
         <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
             <img class="card-img-top" src="<?php echo $rtwo['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
             <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -73,7 +73,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
     </a>
     </div>
     <div class="col-md-3">
-        <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomthree['nightcore']; ?>" style="text-decoration: none;">
+        <a href="/watch.php?v=<?php echo $randomthree['nightcore']; ?>" style="text-decoration: none;">
             <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
                 <img class="card-img-top" src="<?php echo $rthree['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
                 <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -83,7 +83,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
         </a>
     </div>
     <div class="col-md-3">
-        <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomfour['nightcore']; ?>" style="text-decoration: none;">
+        <a href="/watch.php?v=<?php echo $randomfour['nightcore']; ?>" style="text-decoration: none;">
             <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
                 <img class="card-img-top" src="<?php echo $rfour['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
                 <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -94,7 +94,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
     </div>
     <div class="w-100" style="margin-top: 5px;"></div>
     <div class="col-md-3">
-        <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomfive['nightcore']; ?>" style="text-decoration: none;">
+        <a href="/watch.php?v=<?php echo $randomfive['nightcore']; ?>" style="text-decoration: none;">
             <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
                 <img class="card-img-top" src="<?php echo $rfive['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
                 <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -104,7 +104,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
         </a>
     </div>
     <div class="col-md-3">
-        <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomsix['nightcore']; ?>" style="text-decoration: none;">
+        <a href="/watch.php?v=<?php echo $randomsix['nightcore']; ?>" style="text-decoration: none;">
             <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
                 <img class="card-img-top" src="<?php echo $rsix['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
                 <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -114,7 +114,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
         </a>
     </div>
     <div class="col-md-3">
-        <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomseven['nightcore']; ?>" style="text-decoration: none;">
+        <a href="/watch.php?v=<?php echo $randomseven['nightcore']; ?>" style="text-decoration: none;">
             <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
                 <img class="card-img-top" src="<?php echo $rseven['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
                 <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -124,7 +124,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
         </a>
     </div>
     <div class="col-md-3">
-        <a href="https://nightcore.co.uk/watch.php?v=<?php echo $randomeight['nightcore']; ?>" style="text-decoration: none;">
+        <a href="/watch.php?v=<?php echo $randomeight['nightcore']; ?>" style="text-decoration: none;">
             <div class="card text-white" style="max-width: 320px; background-color: #a2261d;">
                 <img class="card-img-top" src="<?php echo $reight['items'][0]['snippet']['thumbnails']['medium']['url']; ?>" alt="Card image">
                 <div class="card-body" style="min-height:80px; max-height:80px;">
@@ -173,7 +173,7 @@ $reight = getDescriptionTwo($randomeight['nightcore']);
     var done = false;
     function onPlayerStateChange(event) {
         if(event.data === 0) {
-            window.location.href = "https://nightcore.co.uk/randomsong.php";
+            window.location.href = "/randomsong.php";
         }
     }
     function stopVideo() {
