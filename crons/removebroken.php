@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-    $to = "team@nightcore.co.uk";
+    $to = "youremail";
     $subject = "Database Error";
 
     $message = $conn->connect_error;
@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     $headers .= "Content-type:text/html;charset=UTF-8" . "\n";
 
     // More headers
-    $headers .= 'From: team@nightcore.co.uk' . "\n";
+    $headers .= 'From: youremail' . "\n";
 
     mail($to,$subject,$message,$headers);
 }
@@ -29,7 +29,7 @@ $sql = "SELECT * FROM nightcore_vids";
 $result = $conn->query($sql);
 
 function getDescriptionOne($songid) {
-    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=AIzaSyDhFHdCAkvU9iSmZbH0N9C_1D64BsUawzI";
+    $url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=".$songid."&key=yourkey";
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_RETURNTRANSFER => 1,
@@ -57,13 +57,7 @@ if ($result->num_rows > 0) {
             $sql = "DELETE FROM nightcore_vids WHERE nightcore='".$songid."'";
 
             if ($conn->query($sql) === TRUE) {
-                $message = "**Song Deleted:** \nTitle: *{$row['title']}*\nArtist: *{$row['artist']}*\nID: *{$row['nightcore']}*";
-                $data = array("content" => $message, "username" => "NIGHTCORE.CO.UK");
-                $curl = curl_init("https://discordapp.com/api/webhooks/492311142555713545/vRTusLdxwYJBX-sfNK1vDOy1tvlzN5f8xBuLLp-yQu8WmuzTIgJLOkMKEbjHVXozG7H7");
-                curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
-                curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
-                curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                curl_exec($curl);
+                echo"Success"
             } else {
                 echo "Error deleting record: " . $conn->error;
             }
