@@ -27,7 +27,7 @@ $back = $page - 1;
             while($row = $result->fetch_assoc()) {
                 echo "
                       <div class='col-sm-4' style='padding-bottom: 25px;'>
-                      <a href='https://nightcore.co.uk/watch.php?v=".$row['nightcore']."' style='text-decoration: none;'>
+                      <a href='/watch.php?v=".$row['nightcore']."' style='text-decoration: none;'>
                       <div class='card text-white' style='max-width: 320px; background-color: #a2261d;'>
                       <img class='card-img-top' src='https://img.youtube.com/vi/".$row['nightcore']."/mqdefault.jpg' alt='Card image cap'>
                 <div class='card-body' style='min-height:80px; max-height:80px;'>
