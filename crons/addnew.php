@@ -1,16 +1,16 @@
 <?php
 ini_set('max_execution_time',9000);
 $servername = "localhost";
-$username = "rxh_user";
-$password = "VB1jY2znC3qWAe7wfZ6F46H2ZlrfUl2TBHJQQLTPxGnPgnTeXaCM48jX";
-$dbname = "rxh_nani";
+$username = "user";
+$password = "pass";
+$dbname = "db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-    $to = "robloxfilmcam@gmail.com";
+    $to = "email";
     $subject = "Database Error";
 
     $message = $conn->connect_error;
